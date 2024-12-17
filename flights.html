@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flight Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .flights-container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .flights-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .form-group input:focus {
+            border-color: black;
+            outline: none;
+        }
+        .book-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .extra-links {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .extra-links a {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .extra-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flights-container">
+        <h2>Flight Booking</h2>
+        <form>
+            <div class="form-group">
+                <label for="departure">Departure City</label>
+                <input type="text" id="departure" name="departure" placeholder="Enter departure city" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination City</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination city" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <button type="submit" class="book-btn">Book Flight</button>
+        </form>
+        <div class="extra-links">
+            <p><a href="#">Need Help?</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
